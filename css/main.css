@@ -316,8 +316,9 @@ h1, h2, h3, h4, h5, h6 {
 	height: 100%;
 	background-position: 50% 50%;
 	background-repeat:no-repeat;
-	height:500px !important;
+	height:600px !important;
 	margin-top:85px; !important;
+	width:1000px !important;
 	
 }
 
