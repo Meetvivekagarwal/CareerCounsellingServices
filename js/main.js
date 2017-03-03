@@ -105,6 +105,30 @@ function Scroll() {
 			width:jQuery(this).attr('data-percent')
 		},6000);
 	});
+		
+	
+    $('#login_lost_btn').click(function() {
+      $('#lost-form').css("display","block");
+      $('#register-form').css("display","none");
+      $('#login-form').css("display","none");
+      $("#div-forms").load("lost-form");
+    });
+
+    $('#login_register_btn').click(function() {
+	    $('#lost-form').css("display","none");
+      $('#register-form').css("display","block");
+      $('#login-form').css("display","none");
+       $("#div-forms").load("register-form");
+    });
+
+    $('#lost_login_btn').click(function() {
+	    $('#lost-form').css("display","none");
+      $('#register-form').css("display","none");
+      $('#login-form').css("display","block");
+       $("#div-forms").load("login-form");
+    });
+
+});	
 });
 
 
