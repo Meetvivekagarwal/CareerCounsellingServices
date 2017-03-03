@@ -115,7 +115,7 @@ function Scroll() {
     });
 
     $('#login_register_btn').click(function() {
-	    $('#lost-form').css("display","none");
+      $('#lost-form').css("display","none");
       $('#register-form').css("display","block");
       $('#login-form').css("display","none");
        $("#div-forms").load("register-form");
@@ -127,6 +127,28 @@ function Scroll() {
       $('#login-form').css("display","block");
        $("#div-forms").load("login-form");
     });
+	
+   $('#lost_register_btn').click(function() {
+	    $('#lost-form').css("display","none");
+      $('#register-form').css("display","block");
+      $('#login-form').css("display","none");
+       $("#div-forms").load("register-form");
+    });
+  
+  $('#register_login_btn').click(function() {
+	    $('#lost-form').css("display","none");
+      $('#register-form').css("display","none");
+      $('#login-form').css("display","block");
+       $("#div-forms").load("login-form");
+    });
+$('#register_lost_btn').click(function() {
+	    $('#lost-form').css("display","block");
+      $('#register-form').css("display","none");
+      $('#login-form').css("display","none");
+       $("#div-forms").load("lost-form");
+    });
+   
+		
 
 	
 });
