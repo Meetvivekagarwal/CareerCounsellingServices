@@ -69,6 +69,7 @@ a {
 	color:#fc7700;
 }
 
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Roboto', sans-serif;
 }
@@ -702,9 +703,11 @@ h1, h2, h3, h4, h5, h6 {
 	overflow:hidden;
 }
 
-.single-member img {
-	width:100%
+.single-member img{
+	width:  100%;
+	overflow: hidden;
 }
+
 
 .single-member h4, 
 .single-member h5 {
@@ -1543,5 +1546,9 @@ h1, h2, h3, h4, h5, h6 {
 ======================*/
 
 #main-section{
-	margin-top: 30px;
+	margin-top: 50px;
+}
+
+h1#username {
+	padding-left: 40px;
 }
