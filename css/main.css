@@ -1,16 +1,3 @@
-/*+++++++++++++++++++++
-=====================================
- Template Name : Himu
- Author Name : Mostafizur Rahman
- Author URI : http://mostafiz.me/
- Template URI :http://mostafiz.me/demo/himu/
- Version : 1.1
-===============================
-+++++++++++++++++++*/
-
-
-
-
 
 /*
 ====================================
@@ -338,7 +325,6 @@ h1, h2, h3, h4, h5, h6 {
 	left:0;
 	bottom:0;
 	background-color: rgba(0,0,0,0.7);
-	/* background-image:url(../images/home-pattern.png); */
 	background-repeat:repeat;
 	opacity:0.2;
 }
@@ -354,7 +340,7 @@ h1, h2, h3, h4, h5, h6 {
 	height: 100%;
 	background-position: 50% 50%;
 	background-repeat:no-repeat;
-	height:700px !important;
+	height:500px !important;
 	margin-top:105px; !important;
 	
 	
