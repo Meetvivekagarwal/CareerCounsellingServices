@@ -44,11 +44,13 @@ body {
 	position: relative;
 	font-weight:400;
 	background: #fff;
-	color:#43484E
+	color:#43484E;
+	/* padding-top: 75px; */
 }
 
-body  section{
-	padding: 75px 0;
+body section{
+	/* padding: 75px 0; */
+	/* margin: 0; */
 }
 
 a:hover {
@@ -77,6 +79,11 @@ h1, h2, h3, h4, h5, h6 {
 .req{
 	color: red;
 }
+
+.section-heading{
+	padding: 55px 0;
+}
+
 .btn-primary, .btn-default {
 	background-color:#fc7700;
 	color: #FFF;
@@ -278,38 +285,37 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 0;
   border-bottom: 0;
   box-shadow: rgba(0, 0, 0, 0.298039) 0px 0px 3px;
-  padding-bottom: 0px;
+  /* padding-bottom: 0px; */
 }
 
 #navigation .navbar-toggle{
-  margin-top: 20px;
   background-color: #333;
 }
 
-#navigation .navbar-brand h1{
-  padding: 0;
-  margin: 0;
+#navigation .logo {
+	width: 75px;
+	height: 75px;
+}
+
+#navigation .logo img{
+	max-height: 100%;
 }
 
 #navigation .navbar-nav.navbar-right li {
 	padding: 0 1px;
 }
 
-#navigation .navbar-nav.navbar-right {
-	margin-top:28px
-}
-
 #navigation .navbar-nav.navbar-right li a {
 	color: #43484E;
 	font-family: 'Roboto',sans-serif;
 	font-size: 14px;
-	padding: 0;
+	line-height: 75px;
+	/* padding: 0 30px; */
 	text-transform: uppercase;
 	-webkit-transition: all .9s ease 0s;
 	-moz-transition: all .9s ease 0s;
 	-o-transition: all .9s ease 0s;
 	transition: all .9s ease 0s;
-	padding: 6px 15px;
 }
 
 #navigation .navbar-inverse .navbar-nav  .active  a,  
@@ -628,15 +634,29 @@ h1, h2, h3, h4, h5, h6 {
 	color:#ffffff;
 }
 
+/*take care of padding on overlays: none on overlay,
+pad top of first section and bottom of last*/
+.par-first {
+	padding-top: 75px;
+}
 
+.par-last {
+	padding-bottom: 75px;
+}
 
+.par-overlay{
+	width:100%;
+	margin:  0;
+	padding: 0;
+	background-color: rgba(0,0,0,0.6);
+}
 
 /*====================
 ======Service CSS=====
 ======================*/
 
 #services {
-  background-image: url("../images/services/service-bg.jpg");
+  background-image: url("../images/slider/bridge.jpg");
   color:#fff;
   text-align:center;
   background-color:	#0A0A13;
@@ -976,7 +996,7 @@ h1, h2, h3, h4, h5, h6 {
 ======================*/
 
 #clients{
-	background-image: url("../images/clients/client-bg.jpg");
+	background-image: url("../images/slider/moscow.jpg");
 	background-color:#0A0A13;
 }
 
@@ -1202,13 +1222,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #contact .contact-heading {
-	padding-bottom:35px;
 	position: relative;
 	z-index: 10;
-}
-
-.contact-details {	
-	padding-top:75px;
 }
 
 .pattern {
