@@ -29,15 +29,14 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	position: relative;
-	font-weight:400;
-	background: #fff;
+	font-weight:400; background: #fff;
 	color:#43484E;
 	/* padding-top: 75px; */
 }
 
-body section{
-	/* padding: 75px 0; */
-	/* margin: 0; */
+/* allow room for navbar */
+body .first-section{
+	margin-top: 105px;
 }
 
 a:hover {
@@ -295,7 +294,7 @@ h1, h2, h3, h4, h5, h6 {
 #navigation .navbar-nav.navbar-right li a i {
 	color: #43484E;
 	font-size: 28px;
-	line-height: 75px;
+	line-height: 65px;
 }
 #navigation .navbar-nav.navbar-right li a {
 	color: #43484E;
@@ -346,7 +345,7 @@ h1, h2, h3, h4, h5, h6 {
 	background-position: 50% 50%;
 	background-repeat:no-repeat;
 	height:500px !important;
-	margin-top:105px; !important;
+	/* margin-top:105px; !important; */
 	
 	
 }
@@ -673,7 +672,7 @@ pad top of first section and bottom of last*/
 }
 
 .single-service p {
-	text-align:justify;
+	text-align:center;
 }
 
 .single-service i {
@@ -1232,11 +1231,11 @@ pad top of first section and bottom of last*/
 }
 
 
-.contact-address {
+/* .contact-address {
 	background-color: #fff;
 	height:390px;
 	padding-top:85px
-}
+} */
 
 .contact-address .social-icons a i {
 	border-radius:0;
@@ -1289,11 +1288,11 @@ pad top of first section and bottom of last*/
 	
 }
 
-#contact-form-section {	
+/* #contact-form-section {	
 	padding:35px;
 	background-color: #FFF; 
 	height:390px;
-}
+} */
 #contact-form-section .btn-primary {
 	background-color:#fc7700;
 	border-color:#f6f6f6;
@@ -1579,11 +1578,24 @@ pad top of first section and bottom of last*/
 }
 
 /*====================
+======Login=====
+======================*/
+
+#login-modal .modal-header .logo {
+	width: 75px;
+	height: 75px;
+	margin: auto;
+}
+
+#login-modal .modal-header .logo img{
+	max-height: 100%;
+}
+/*====================
 ======Profile=====
 ======================*/
 
 #main-section{
-	margin-top: 50px;
+	margin: 150px 0;
 }
 
 h2#username {
