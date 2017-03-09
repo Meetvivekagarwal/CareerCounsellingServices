@@ -98,12 +98,9 @@
 
 .modal-body {
     position: relative;
-    padding: 5px 15px 5px 15px;
-}
-.modal-body1 {
-    position: relative;
     padding: 5px 15px 5px 40px;
 }
+
 
 .modal-footer {
     padding: 15px 15px 15px 15px;
