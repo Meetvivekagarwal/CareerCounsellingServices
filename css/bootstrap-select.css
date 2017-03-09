@@ -7,10 +7,10 @@
 
 select.bs-select-hidden,
 select.selectpicker {
-  display: none !important;
+  display: block !important;
 }
 .bootstrap-select {
-  width: 220px \0;
+  width: 120px \0;
   /*IE9 and below*/
 }
 .bootstrap-select > .dropdown-toggle {
