@@ -1605,6 +1605,19 @@ pad top of first section and bottom of last*/
 #login-modal .modal-header .logo img{
 	max-height: 100%;
 }
+
+#errorLoginHeader{
+	text-align: center;
+	font-weight: 500;
+}
+
+#login-modal .login-msg {
+	text-align: center;
+	font-weight: 500;
+}
+#login-modal #error-msg {
+	
+}
 /*====================
 ======Profile=====
 ======================*/

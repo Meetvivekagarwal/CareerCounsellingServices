@@ -49,7 +49,7 @@
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> 
 						<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> 
 					</button> 
-					<a class="navbar-brand" href="Home.html"><div class="logo"><img src="images/logos/Logo2.jpg" alt="logo"></div></a>
+					<a class="navbar-brand" href="Home.html"><div class="logo"><img src="images/logos/logo-words.png" alt="logo"></div></a>
 				</div> 
 				<div class="collapse navbar-collapse"> 
 					<ul class="nav navbar-nav navbar-right"> 
@@ -418,17 +418,22 @@
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span class="fa fa-times" aria-hidden="true"></span>
 					</button>
-					<div class="logo"><img src="images/logos/Logo2.jpg" alt="logo"></div>
-					<div class="logo"><img src="images/Logo2.jpg" alt="logo"></div>
-					<div class ="errorBox">
-				        <img src="images/Shocked.gif" alt="logo">
-					<label> Uh-oh! I couldn’t find those credentials. Please check your username/password again. </label>
-							 	
-							</div>
+					
+					<div id="normalLoginHeader">
+						<div class="logo logo-normal"><img src="images/logos/logo.png" alt="logo">
+						</div>
+					</div>
+
+					<div id="errorLoginHeader" style="display:none;">
+						<div class="logo logo-error"><img src="images/logos/logo-shocked.png" alt="logo">
+						</div>
+						<p> Uh-oh! I couldn’t find those credentials. Please check your username/password again. </p>		 	
+					</div>
 				</div>
                 
-                <!-- Begin # DIV Form -->
+			  <!-- Begin # DIV Form -->
 				<div id="div-forms">
+
 					<!-- Begin # Login Form -->
 					<form id="login-form" name="login-form">
 						<div class="modal-body">
@@ -436,26 +441,22 @@
 							<div class="checkbox">
 								<label><input type="checkbox"> Remember me</label>
 							</div>
-							<div class ="errorBox">
-							<label> Uh-oh! I couldn’t find those credentials. Please check your username/password again.  <div class="logo"><img src="images/logos/Shocked.gif" alt="logo"></div></label>	
-							 	
-							</div>
 							
 						</div>
 						<div class="modal-footer">
 							<div>
-								<button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
+								<button class="btn btn-primary btn-lg btn-block" type="submit" onclick="$('#errorLoginHeader').toggle(); $('#normalLoginHeader').toggle();">Login</button>
 							</div>
 							<div>
 								<button class="btn btn-link" id="login_lost_btn" type="button">Lost Password?</button> <button class="btn btn-link" id="login_register_btn" type="button">Register</button>
 							</div>
 						</div>
 					</form><!-- End # Login Form -->
+
 					<!-- Begin | Lost Password Form -->
 					<form id="lost-form" name="lost-form" style="display:none;">
 						<div class="modal-body">
-							<!-- <div id="div-lost-msg"> 
-				                            </div> -->
+						<div class="login-msg" id="error-msg"> <p>Don't worry, friend, I'm here to help.</p> </div>
 							<input class="form-control" id="lost_email" placeholder="E-Mail" required="" type="text">
 						</div>
 						<div class="modal-footer">
@@ -467,10 +468,13 @@
 							</div>
 						</div>
 					</form><!-- End | Lost Password Form -->
+
 					<!-- Begin | Register Form -->
 					<form id="register-form" name="register-form" style="display:none;">
 						<div class="modal-body">
-							<div id="div-register-msg"></div><input class="form-control" id="register_username" placeholder="Username" required="" type="text"> <input class="form-control" id="register_email" placeholder="E-Mail" required="" type="text"> <input class="form-control" id="register_password" placeholder="Password" required="" type="password">
+						<input class="form-control" id="register_username" placeholder="Username" required="" type="text"> 
+						<input class="form-control" id="register_email" placeholder="E-Mail" required="" type="text"> 
+						<input class="form-control" id="register_password" placeholder="Password" required="" type="password">
 						</div>
 						<div class="modal-footer">
 							<div>
