@@ -25,7 +25,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css"/>
-	<script src="js/ModalPopUp.js"></script>
+	
+	<link rel="stylesheet" href="css/bootstrap-select.css">
 
 </head><!--/head-->
 <body>
@@ -539,18 +540,15 @@
                 <div class="btn-toolbar" style="margin: 0;">
                     <div class="btn-group" style="padding-bottom:30px">
 			<label for="dateofbirth">Counselor</label>
-			    <select class="selectpicker">
-    				<optgroup label="Technology" disabled>
-      				<option>Vivek</option>
-      				<option>Pearl</option>
-      				<option>Swapnil</option>
-    				</optgroup>
-				    <optgroup label="Management">
-				      <option>Sumit</option>
-				      <option>Aswathy</option>
-				      
-				    </optgroup>
-  			</select>    
+			  <div class="form-group">
+      <select id="lunch" class="selectpicker" data-live-search="true" title="Please select a lunch ...">
+        <option>Hot Dog, Fries and a Soda</option>
+        <option>Burger, Shake and a Smile</option>
+        <option>Sugar, Spice and all things nice</option>
+        <option>Baby Back Ribs</option>
+        <option>A really really long option made to illustrate an issue with the live search in an inline form</option>
+      </select>
+    </div>   
 			<label for="dateofbirth">Date</label>
 <input type="date" name="dateofbirth" id="dateofbirth">
 			<label for="dateofbirth">Time</label>    
@@ -597,6 +595,8 @@
 	<script type="text/javascript" src="js/jquery.parallax.js"></script> 
 	<script type="text/javascript" src="js/main.js"></script> 
         <script type="text/javascript" src="js/jquery.datetimepicker.full.js"></script>
+	<script type="text/javascript" src="/js/bootstrap-select.js"></script>
+	<script type="text/javascript" src="js/ModalPopUp.js"></script>
 <script>
 
 
