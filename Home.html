@@ -24,7 +24,7 @@
 	<link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
-
+        <link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css"/>
 	<script src="js/ModalPopUp.js"></script>
 
 </head><!--/head-->
@@ -536,8 +536,10 @@
               
                 <div class="btn-toolbar" style="margin: 0;">
                     <div class="btn-group">
-                        <label for="dateofbirth">Date</label>
+			<label for="dateofbirth">Date</label>
 <input type="date" name="dateofbirth" id="dateofbirth">
+			<label for="dateofbirth">Time</label>    
+                        <input type="text" id="datetimepicker1"/>    
                         
                     </div>
                     <!-- /btn-group -->
@@ -579,7 +581,18 @@
 	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> 
 	<script type="text/javascript" src="js/jquery.parallax.js"></script> 
 	<script type="text/javascript" src="js/main.js"></script> 
+        <script type="text/javascript" src="js/jquery.datetimepicker.full.js"></script>
+<script>
 
+
+$('#datetimepicker1').datetimepicker({
+	datepicker:false,
+	format:'H:i',
+	step:5
+});
+
+
+</script>
 
 </body>
 </html>
