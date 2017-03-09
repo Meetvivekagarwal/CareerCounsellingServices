@@ -26,8 +26,7 @@
 	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 
 	<script src="js/ModalPopUp.js"></script>
-	<script type="text/javascript" src="js/clock/jquery.min.js"></script>
-        <script type="text/javascript" src="js/jquery-clockpicker.min.js"></script>
+
 </head><!--/head-->
 <body>
 	<div class="preloader">
@@ -534,12 +533,7 @@
         <div class="row">
           
             <div class="span5">
-                <div class="input-group clockpicker">
-			<input type="text" class="form-control" value="09:30">
-			<span class="input-group-addon">
-				<span class="glyphicon glyphicon-time"></span>
-			</span>
-		</div>
+              
                 <div class="btn-toolbar" style="margin: 0;">
                     <div class="btn-group">
                         <label for="dateofbirth">Date</label>
@@ -585,54 +579,7 @@
 	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> 
 	<script type="text/javascript" src="js/jquery.parallax.js"></script> 
 	<script type="text/javascript" src="js/main.js"></script> 
-	<script type="text/javascript">
-$('.clockpicker').clockpicker()
-	.find('input').change(function(){
-		console.log(this.value);
-	});
-$('#single-input').clockpicker({
-	placement: 'bottom',
-	align: 'right',
-	autoclose: true,
-	'default': '20:48'
-});
-$('.clockpicker-with-callbacks').clockpicker({
-		donetext: 'Done',
-		init: function() { 
-			console.log("colorpicker initiated");
-		},
-		beforeShow: function() {
-			console.log("before show");
-		},
-		afterShow: function() {
-			console.log("after show");
-		},
-		beforeHide: function() {
-			console.log("before hide");
-		},
-		afterHide: function() {
-			console.log("after hide");
-		},
-		beforeHourSelect: function() {
-			console.log("before hour selected");
-		},
-		afterHourSelect: function() {
-			console.log("after hour selected");
-		},
-		beforeDone: function() {
-			console.log("before done");
-		},
-		afterDone: function() {
-			console.log("after done");
-		}
-	})
-	.find('input').change(function(){
-		console.log(this.value);
-	});
-if (/Mobile/.test(navigator.userAgent)) {
-	$('input').prop('readOnly', true);
-}
-</script>
+
 
 </body>
 </html>
