@@ -559,7 +559,23 @@ h1, h2, h3, h4, h5, h6 {
 	margin-right: 20px;
 	padding: 5px;
 }
-
+.aboutus-content{
+	overflow: hidden;
+	display:flex;
+}
+.about-us .aboutus-img {
+	width:200px;
+	overflow:hidden;
+}
+.about-us .aboutus-body {
+	-webkit-flex: 1; /* Safari 6.1+ */
+  -ms-flex: 1; /* IE 10 */ 
+  flex: 1;
+	padding-left:15px;
+}
+.about-us .aboutus-img img{
+	width:100%;
+}
 .skillbar {
 	position:relative;
 	display:block;
@@ -1623,3 +1639,16 @@ input {
   /*width: 190px;*/
 }
 
+/*====================
+======Appointments=====
+======================*/
+
+#login-modal .modal-header .logo {
+	width: 75px;
+	height: 75px;
+	margin: auto;
+}
+
+#login-modal .modal-header .logo img{
+	max-height: 100%;
+}

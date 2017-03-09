@@ -58,19 +58,16 @@
 						<li class="scroll"><a href="#about-us">About Us</a></li> 
 						<li class="scroll"><a href="#services">Services</a></li> 
 						<li class="scroll"><a href="#our-team">Our Team</a></li> 
-						<li class="scroll"><a href="#portfolio">Testimonial</a></li> 
+						<li class="scroll"><a href="#clients">Testimonial</a></li> 
 						<li class="scroll"><a href="#" class="" role="button" data-toggle="modal" data-target="#appointment-modal">Appointment</a></li> 
-						<li class="scroll"><a href="#contact">Contact Us</a></li> 
-						 
+						<li class="scroll"><a href="#contact">Contact Us</a></li> 						 
 						<li class="scroll"><a href="#" class="" role="button" data-toggle="modal" data-target="#login-modal">Login</a></li> 
 
-						<!-- <li class="scroll"><a href="#contact"></a></li>  -->
-						<li class="scroll"><a href="#contact"></a></li> 
+						<li class="scroll"><a href="#c"></a></li> 
 
 						<li class="scroll">
 							<a href="profile.html"><i class="fa fa-bell" aria-hidden="true"></i></a>
 						</li>
-						
 						<li class="scroll">
 							<a href="profile.html"><i class="fa fa-id-card-o" aria-hidden="true"></i></a>
 						</li>								
@@ -139,24 +136,24 @@
 				<div class="col-sm-6">
 					
 					<ul class="nav nav-tabs">
-						<li class="active"><a href="#about" data-toggle="tab"><i class="fa fa-chain-broken"></i> About</a></li>
-						<li><a href="#mission" data-toggle="tab"><i class="fa fa-th-large"></i> Mission</a></li>
+						<li class="active"><a href="#about" data-toggle="tab"><i class="fa fa-user-circle"></i> About</a></li>
+						<li><a href="#mission" data-toggle="tab"><i class="fa fa-crosshairs"></i> Mission</a></li>
 						
 					</ul>
 					<div class="tab-content">
 						<div class="tab-pane fade in active" id="about">
-							<div class="media">
-								<img class="pull-left media-object" src="images/about-us/about.jpg" alt="about us"> 
-								<div class="media-body">
-									<p>Career Pundit provides career services to students and professionals. Our expert counselors assist in identifying the correct career path, enhancing strengths and working on weaknesses of students and professionals. Career pundit allows students and professionals to book one to one meeting with our highly qualified counselors who guide them in all or any stage of their job search.
-</p>
+							<div class="aboutus-content">
+								<div class="aboutus-img"><img class="pull-left media-object" src="images/about-us/career1.png" alt="about us"> 
+								</div>
+								<div class="aboutus-body">
+									<p>Career Pundit provides career services to students and professionals. Our expert counselors assist in identifying the correct career path, enhancing strengths and working on weaknesses of students and professionals. Career pundit allows students and professionals to book one to one meeting with our highly qualified counselors who guide them in all or any stage of their job search.</p>
 								</div>
 							</div>
 						</div>
 						<div class="tab-pane fade" id="mission">
-							<div class="media">
-								<img class="pull-left media-object" src="images/about-us/mission.jpg" alt="Mission"> 
-								<div class="media-body">
+							<div class="aboutus-content">
+								<div class="aboutus-img"><img class="pull-left media-object" src="images/about-us/career2.jpg" alt="Mission"></div>
+								<div class="aboutus-body">
 									<p>Our mission is to serve students and professionals with a personal touch and transform their lives by helping them choose a right career path. </p>
 								</div>
 							</div>
@@ -426,87 +423,59 @@
 				</div>
                 
                 <!-- Begin # DIV Form -->
-                <div id="div-forms">
-                
-                    <!-- Begin # Login Form -->
-                    <form id="login-form">
-		                <div class="modal-body">
-				    		<!-- <div id="div-login-msg">
-                            </div> -->
-				    		<input id="login_username" class="form-control" type="text" placeholder="Username" required>
-				    		<input id="login_password" class="form-control" type="password" placeholder="Password" required>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox"> Remember me
-                                </label>
-                            </div>
-        		    	</div>
-				        <div class="modal-footer">
-                            <div>
-                                <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
-                            </div>
-				    	    <div>
-                                <button id="login_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
-                                <button id="login_register_btn" type="button" class="btn btn-link">Register</button>
-                            </div>
-				        </div>
-                    </form>
-                    <!-- End # Login Form -->
-                    
-                    <!-- Begin | Lost Password Form -->
-                    <form id="lost-form" style="display:none;">
-    	    		    <div class="modal-body">
-		    				<!-- <div id="div-lost-msg"> 
-                            </div> -->
-		    				<input id="lost_email" class="form-control" type="text" placeholder="E-Mail" required>
-            			</div>
-		    		    <div class="modal-footer">
-                            <div>
-                                <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
-                            </div>
-                            <div>
-                                <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
-                                <button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
-                            </div>
-		    		    </div>
-                    </form>
-                    <!-- End | Lost Password Form -->
-                    
-                    <!-- Begin | Register Form -->
-                    <form id="register-form" style="display:none;">
-            		    <div class="modal-body">
-		    				<div id="div-register-msg">
-                              
-                            </div>
-		    				<input id="register_username" class="form-control" type="text" placeholder="Username" required>
-                            <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
-                            <input id="register_password" class="form-control" type="password" placeholder="Password" required>
-            			</div>
-			    <div class="modal-header" align="center">
-				<span><b> Help me to help you. Sign up with us! </b></span>	
-				    <img class="img-circle" src="images/Signup.jpg">
-					
-				    
-					
+				<div id="div-forms">
+					<!-- Begin # Login Form -->
+					<form id="login-form" name="login-form">
+						<div class="modal-body">
+							<input class="form-control" id="login_username" placeholder="Username" required="" type="text"> <input class="form-control" id="login_password" placeholder="Password" required="" type="password">
+							<div class="checkbox">
+								<label><input type="checkbox"> Remember me</label>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<div>
+								<button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
+							</div>
+							<div>
+								<button class="btn btn-link" id="login_lost_btn" type="button">Lost Password?</button> <button class="btn btn-link" id="login_register_btn" type="button">Register</button>
+							</div>
+						</div>
+					</form><!-- End # Login Form -->
+					<!-- Begin | Lost Password Form -->
+					<form id="lost-form" name="lost-form" style="display:none;">
+						<div class="modal-body">
+							<!-- <div id="div-lost-msg"> 
+				                            </div> -->
+							<input class="form-control" id="lost_email" placeholder="E-Mail" required="" type="text">
+						</div>
+						<div class="modal-footer">
+							<div>
+								<button class="btn btn-primary btn-lg btn-block" type="submit">Send</button>
+							</div>
+							<div>
+								<button class="btn btn-link" id="lost_login_btn" type="button">Log In</button> <button class="btn btn-link" id="lost_register_btn" type="button">Register</button>
+							</div>
+						</div>
+					</form><!-- End | Lost Password Form -->
+					<!-- Begin | Register Form -->
+					<form id="register-form" name="register-form" style="display:none;">
+						<div class="modal-body">
+							<div id="div-register-msg"></div><input class="form-control" id="register_username" placeholder="Username" required="" type="text"> <input class="form-control" id="register_email" placeholder="E-Mail" required="" type="text"> <input class="form-control" id="register_password" placeholder="Password" required="" type="password">
+						</div>
+						<div class="modal-footer">
+							<div>
+								<button class="btn btn-primary btn-lg btn-block" type="submit">Register</button>
+							</div>
+							<div>
+								<button class="btn btn-link" id="register_login_btn" type="button">Log In</button> <button class="btn btn-link" id="register_lost_btn" type="button">Lost Password?</button>
+							</div>
+						</div>
+					</form><!-- End | Register Form -->
 				</div>
-		    		    <div class="modal-footer">
-                            <div>
-                                <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
-                            </div>
-                            <div>
-                                <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
-                                <button id="register_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
-                            </div>
-		    		    </div>
-                    </form>
-                    <!-- End | Register Form -->
-                    
-                </div>
-                <!-- End # DIV Form -->
-                
+                <!-- End # DIV Form -->  
 			</div>
-		</div>
 	</div>
+</div>
     <!-- END # MODAL LOGIN -->
 	
     	
@@ -531,8 +500,7 @@
 		                <div class="modal-body">
 				    
 
-    <form class="well span7">
-        
+    <form class="well span7"> 
         <div class="row">
           
             <div class="span5" style="padding-bottom:20px">
@@ -548,13 +516,13 @@
         <option>Pearl</option>
         <option>Aswathy</option>
         <option>Swapnil</option>
-    </select>
+      </select>
      
       
 			<label for="dateofbirth">Date</label>
-<input type="date" name="dateofbirth" id="dateofbirth">
+			<input type="date" name="dateofbirth" id="dateofbirth">
 			<label for="dateofbirth">Time</label>    
-                        <input type="text" id="datetimepicker1"/>    
+				<input type="text" id="datetimepicker1"/>    
                         
                     </div>
                     <!-- /btn-group -->
@@ -566,20 +534,19 @@
         </div>
     </form>
 	
-        		    	</div>
-				        <div class="modal-footer">
-				        </div>
-                    </form>
-</div>
-                    <!-- End # Login Form -->
-
-</div>
-                <!-- End # DIV Form -->
-                
-			</div>
 		</div>
-	
-	<!--- END Appointment MODAL -->	
+		<div class="modal-footer">
+		</div>
+		</form>
+		</div>
+		                    <!-- End # Login Form -->
+
+		</div>
+		                <!-- End # DIV Form -->
+		                
+					</div>
+</div>
+<!--- END Appointment MODAL -->	
 
 	<footer id="footer"> 
 		<div class="container"> 
