@@ -66,9 +66,6 @@ h1, h2, h3, h4, h5, h6 {
 	color: red;
 }
 
-.section-heading{
-	padding: 55px 0;
-}
 
 .btn-primary, .btn-default {
 	background-color:#fc7700;
@@ -80,7 +77,7 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 10px 16px;
 	line-height: 1.33;
 	font-size: 18px;
-	font-weight:800;
+	font-weight:600;
 	border: 0;
 	-webkit-transition: all 0.3s ease 0s;
 	-moz-transition: all 0.3s ease 0s;
@@ -736,6 +733,7 @@ pad top of first section and bottom of last*/
 
 #our-team .container{
 	padding-bottom: 75px;
+	padding-top: 60px;
 }
 
 #our-team h2 {
@@ -1231,6 +1229,7 @@ pad top of first section and bottom of last*/
 
 #contact .contact-heading {
 	position: relative;
+	padding: 55px 0;
 	z-index: 10;
 }
 
@@ -1639,16 +1638,25 @@ input {
   /*width: 190px;*/
 }
 
-/*====================
-======Appointments=====
-======================*/
 
-#login-modal .modal-header .logo {
-	width: 75px;
-	height: 75px;
-	margin: auto;
+/*========================================
+======Appointment history (profile page)=====
+==========================================*/
+
+#appt-history-modal #appt-header {
+	padding: 0 15px;
 }
 
-#login-modal .modal-header .logo img{
-	max-height: 100%;
+
+/*========================================
+======Appointments (home page)=====
+==========================================*/
+
+#appointment-modal .modal-header h2{
+	background-color: #fc7700;
+	color: #fff;
+	line-height: 1.5em;
+}
+#appointment-modal #appt-content {
+	background-color: #ececec;
 }

@@ -24,8 +24,7 @@
 	<link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css"/>
-	
+  <link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css"/>
 	<link rel="stylesheet" href="css/bootstrap-select.css">
 
 </head><!--/head-->
@@ -183,13 +182,13 @@
 								<div class="single-service">
 									<i class="fa fa-th"></i>
 									<h2> Career Counselling </h2>
-									<p> Our counsellor works with you to define your own career path</p>
+									<p> Come meet us and kickstart your career in the right direction! The first step is always harder, but we would love to be do our bit to make the journey easier and rewarding </p>
 								</div>
 							</div>
 							<div class="col-sm-4">
 								<div class="single-service">
 									<i class="fa fa-html5"></i>
-									<h2>Career Skill Assessment</h2>
+									<h2>Skill Assessment</h2>
 									<p> Are you looking for a assessment to help you get started ? Try our Assessment Services. This assessment shows your interest profile and connects that profile to specific career and major profiles. </p>
 								</div>
 							</div>
@@ -209,7 +208,7 @@
 
 		<section id="our-team">
 			<div class="container">
-				<div class="row text-center section-heading">
+				<div class="row text-center">
 					<div class="col-sm-8 col-sm-offset-2">
 						<h2 class="title-one">Meet The Team</h2>
 						<p>Our team comprises of industry professionals who have worked in various industries, geographical locations and roles. Our team has an average work experience of 5 years in the industry and also hold a master’s degree from reputed universities. They have helped students year on year and the results are evident in the testimonials our students left us.</p>
@@ -367,7 +366,7 @@
 		<div class="container">
 			<div class="row text-center clearfix">
 				<div class="col-sm-8 col-sm-offset-2">
-					<div class="section-heading contact-heading">
+					<div class="contact-heading">
 						<h2 class="title-one">Contact Us</h2>
 						
 					</div>
@@ -481,59 +480,50 @@
     	
 <!-- BEGIN # MODAL LOGIN -->
 <div class="modal fade" id="appointment-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-    	<div class="modal-dialog">
-			<div class="modal-content">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span class="fa fa-times" aria-hidden="true"></span>
-					</button>
-				<div class="modal-header">
-					<legend class="text-center" style="color: #fff;background-color:#8dc63f"><img src="http://i.imgur.com/0KyKwkh.png"> Make an Appointment</legend>
-					
-					
-				</div>
-                
-                <!-- Begin # DIV Form -->
-                <div id="div-forms1">
-                
-                    <!-- Begin # Login Form -->
-                    <form id="appointment-form">
-		                <div class="modal-body">
-				    
-
-    <form class="well span7"> 
-        <div class="row">
-          
-            <div class="span5" style="padding-bottom:20px">
-              
-                <div class="btn-toolbar" style="margin: 0;">
-                    <div class="btn-group" style="padding-bottom:30px">
-			<label for="dateofbirth">Counselor</label>
-			  
-      <select id="counselor">
-	      <option> Select...</option>      
-        <option>Vivek</option>
-        <option>Sumit</option>
-        <option>Pearl</option>
-        <option>Aswathy</option>
-        <option>Swapnil</option>
-      </select>
-     
-      
-			<label for="dateofbirth">Date</label>
-			<input type="date" name="dateofbirth" id="dateofbirth">
-			<label for="dateofbirth">Time</label>    
-				<input type="text" id="datetimepicker1"/>    
-                        
-                    </div>
-                    <!-- /btn-group -->
-                </div>
-                <label class="">Message</label>
-                <textarea name="message" id="message" class="span4" rows="10" style="width: 70%"></textarea>
-            </div>
-            <button type="submit" class="btn btn-warning" style="margin-left: 32%;" contenteditable="false">Submit</button>
-        </div>
-    </form>
+  <div class="modal-dialog">
+	<div class="modal-content">
 	
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span class="fa fa-times" aria-hidden="true"></span>
+			</button>
+			<div class="text-center"> <h2> <i class="fa fa-calendar"></i>   Make an Appointment </h2></div>
+		</div>
+          
+  <!-- Begin # DIV Form -->
+	  <div id="appt-content" class="modal-body">
+	      <!-- Begin # Login Form -->
+			<form class="well span7">
+				<div class="row">
+					<div class="span5" style="padding-bottom:20px">
+						<div class="btn-toolbar" style="margin: 0;">
+							<div class="btn-group" style="padding-bottom:30px">
+								<label for="dateofbirth">Counselor</label> <select id="counselor">
+									<option>
+										Select...
+									</option>
+									<option>
+										Vivek
+									</option>
+									<option>
+										Sumit
+									</option>
+									<option>
+										Pearl
+									</option>
+									<option>
+										Aswathy
+									</option>
+									<option>
+										Swapnil
+									</option>
+								</select> <label for="dateofbirth">Date</label> <input id="dateofbirth" name="dateofbirth" type="date"> <label for="dateofbirth">Time</label> <input id="datetimepicker1" type="text" placeholder="Choose time...">
+							</div><!-- /btn-group -->
+						</div><label class="">Message</label> 
+						<textarea class="span4" id="message" name="message" rows="10" style="width: 70%"></textarea>
+					</div><button class="btn btn-primary" contenteditable="false" style="margin-left: 32%;" type="submit">Submit</button>
+				</div>
+			</form>
 		</div>
 		<div class="modal-footer">
 		</div>
