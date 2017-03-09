@@ -429,6 +429,12 @@
 						</div>
 						<p> Uh-oh! I couldn’t find those credentials. Please check your username/password again. </p>		 	
 					</div>
+
+					<div id="forgotLoginHeader" style="display:none;">
+						<div class="logo logo-error"><img src="images/logos/logo-help.png" alt="logo">
+						</div>
+						<p> Don't worry, friend, I'm here to help. </p>		 	
+					</div>
 				</div>
                 
 			  <!-- Begin # DIV Form -->
@@ -445,7 +451,7 @@
 						</div>
 						<div class="modal-footer">
 							<div>
-								<button class="btn btn-primary btn-lg btn-block" type="submit" onclick="$('#errorLoginHeader').toggle(); $('#normalLoginHeader').toggle();">Login</button>
+								<button id="login-btn" class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
 							</div>
 							<div>
 								<button class="btn btn-link" id="login_lost_btn" type="button">Lost Password?</button> <button class="btn btn-link" id="login_register_btn" type="button">Register</button>
@@ -456,7 +462,7 @@
 					<!-- Begin | Lost Password Form -->
 					<form id="lost-form" name="lost-form" style="display:none;">
 						<div class="modal-body">
-						<div class="login-msg" id="error-msg"> <p>Don't worry, friend, I'm here to help.</p> </div>
+						<!-- <div class="login-msg" id="error-msg"> <p>Don't worry, friend, I'm here to help.</p> </div> -->
 							<input class="form-control" id="lost_email" placeholder="E-Mail" required="" type="text">
 						</div>
 						<div class="modal-footer">
@@ -464,7 +470,7 @@
 								<button class="btn btn-primary btn-lg btn-block" type="submit">Send</button>
 							</div>
 							<div>
-								<button class="btn btn-link" id="lost_login_btn" type="button">Log In</button> <button class="btn btn-link" id="lost_register_btn" type="button">Register</button>
+								<button class="btn btn-link back-to-login" id="lost_login_btn" type="button">Log In</button> <button class="btn btn-link back-to-login" id="lost_register_btn" type="button">Register</button>
 							</div>
 						</div>
 					</form><!-- End | Lost Password Form -->

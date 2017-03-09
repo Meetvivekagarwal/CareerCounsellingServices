@@ -1,6 +1,23 @@
 jQuery(function($) {'use strict',
 
-	
+	$('#login-btn').click(function(){
+    $('#forgotLoginHeader').hide();
+    $('#errorLoginHeader').toggle();
+    $('#normalLoginHeader').toggle();
+  });
+
+  $('.back-to-login').click(function(){
+    $('#forgotLoginHeader').hide();
+    $('#normalLoginHeader').show();
+  });
+
+  $('#login_lost_btn').click(function(){
+    $('#errorLoginHeader').hide();
+    $('#normalLoginHeader').hide();
+    $('#forgotLoginHeader').show();
+  });
+
+
 	// all Parallax Section
 	$(window).load(function(){'use strict',
 		$("#services").parallax("50%", 0.3);
