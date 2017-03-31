@@ -70,9 +70,23 @@
 		width:100%;
 		margin-bottom:15px
 	}
-	.single-member{
-		height:515px;
-		margin-bottom:30px
+
+	.single-member {
+		display:flex;
+		height: 250px;
+	}
+	.single-member .mem-pic{
+		width: 30%;
+		margin-right:2%;
+	}
+	.single-member .mem-text {
+		flex: 1;
+	}
+
+	.single-member h4,
+	.single-member h5, 
+	.single-member p{
+		text-align: left;
 	}
 	.efffect h3,.efffect h4{
 		display:none

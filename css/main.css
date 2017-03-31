@@ -759,7 +759,7 @@ pad top of first section and bottom of last*/
 }
 
 .single-member img{
-	width:  100%;
+	max-width:  100%;
 	overflow: hidden;
 }
 
