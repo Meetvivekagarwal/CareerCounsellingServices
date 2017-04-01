@@ -828,7 +828,6 @@ pad top of first section and bottom of last*/
 	color:#43484E
 }
 
-
 .member-left {
 	left:49%;
 }
@@ -836,6 +835,7 @@ pad top of first section and bottom of last*/
 .member-right {
 	left:51%
 }
+
 
 
 /*======================
@@ -1039,7 +1039,8 @@ pad top of first section and bottom of last*/
 #clients-carousel 
 .carousel-inner img {
 	border-right:5px solid#eee;
-	padding-right:10px
+	padding-right:10px;
+	margin-right:20px;
 }
 
 #clients-carousel 
@@ -1098,7 +1099,10 @@ pad top of first section and bottom of last*/
 	color:#fc7700;
 }
 
-
+.single-client .media-body{
+	overflow:visible;
+	padding:0.5% 0;
+}
 
 /*=====================
 ======Our Blog CSS=====
