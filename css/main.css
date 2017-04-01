@@ -1661,8 +1661,44 @@ input {
 
 #appt-history-modal #appt-header {
 	padding: 0 15px;
+	width:100%;
+	display:table;
+}
+#appt-history-modal #appt-header .client-appt-img,
+#appt-history-modal #appt-header .appt-redo,
+#appt-history-modal #appt-header .counsl-appt-img {
+	display:table-cell;
+	line-height: 100px;
 }
 
+#appt-history-modal #appt-header .client-appt-img,
+#appt-history-modal #appt-header .counsl-appt-img{
+	position: relative;
+	overflow: hidden;
+	width: 100px;
+	height: 100px;
+}
+#appt-history-modal #appt-header img {
+	position: absolute;
+	top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+	margin: auto;
+	max-height: 100%;
+}
+#appt-history-modal #appt-header .appt-redo{
+	text-align: center;
+}
+#appt-history-modal #appt-content h3{
+	background-color: #fc7700;
+	color: #fff;
+	text-align: center;
+	line-height:1.5em;
+}
+#appt-history-modal #appt-content p{
+	padding: 0 2%;
+}
 
 /*========================================
 ======Appointments (home page)=====
