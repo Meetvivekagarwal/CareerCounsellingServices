@@ -1,5 +1,8 @@
 jQuery(function($) {'use strict',
 
+// $('.carousel').carousel({
+//     interval: false;
+// }); 
 	$('#login-btn').click(function(){
     $('#forgotLoginHeader').hide();
     $('#errorLoginHeader').toggle();

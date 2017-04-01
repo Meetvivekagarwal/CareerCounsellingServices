@@ -12,6 +12,9 @@
 	.single-service{
 		height: 430px;
 	}
+	.team-members .single-member {
+		height:430px;
+	}
 }
 
 @media (min-width:992px) and (max-width:1199px){
@@ -43,6 +46,10 @@
 	#navigation .navbar-nav.navbar-right li i{
 		font-size: 16px;
 	}
+	.team-members .single-member {
+		height:430px;
+	}
+
 }
 @media (min-width:768px) and (max-width:991px){
 	.navbar-header{
@@ -71,15 +78,15 @@
 		margin-bottom:15px
 	}
 
-	.single-member {
+	.team-members .single-member {
 		display:flex;
 		height: 250px;
 	}
-	.single-member .mem-pic{
+	.team-members .single-member .mem-pic{
 		width: 30%;
 		margin-right:2%;
 	}
-	.single-member .mem-text {
+	.team-members .single-member .mem-text {
 		flex: 1;
 	}
 
@@ -107,7 +114,10 @@
 	.single-service{
 		height: 520px;
 	}
-
+	#clients-carousel .carousel-inner img {
+/*    border-right: 0px;
+    padding-right: 0px;
+    padding: 10px;*/
 }
 
 @media (max-width:767px){
@@ -166,8 +176,10 @@
 		left:55%
 	}
 	.single-member{
-		margin-bottom:25px;
-		height:600px
+		margin-bottom:25px !important;
+		max-height: 550px !important;
+		display:table !important;
+		width:100%;
 	}
 	#portfolio .portfolio-filter{
 		padding:0
@@ -179,7 +191,9 @@
 		margin-top:18%
 	}
 	#clients-carousel .carousel-inner img{
-		width:100%
+		border-right:0px;
+		padding-right:0px;
+		padding: 10px;
 	}
 	.single-blog ul li{
 		margin-bottom:10px
@@ -275,7 +289,8 @@
 	}
 	.single-member{
 		margin-bottom:25px;
-		height:450px
+		height:510px;
+		padding:25px;
 	}
 	#portfolio .portfolio-filter li{
 		margin-bottom:10px

@@ -1,0 +1,86 @@
+
+/*====================
+======normal(1016)=====
+======================*/
+
+
+#clients-carousel  {
+  margin-top:45px;
+  text-align:center;
+}
+
+#clients-carousel 
+.carousel-inner {
+  display:inline-block;
+  width:80%
+}
+
+.carousel-inner blockquote {
+  border-left: 0 none;
+  margin:15px;
+  padding:0;
+  text-align: left;
+}
+
+.carousel-inner blockquote p {
+  font-size:17px;
+  
+}
+
+#clients-carousel .media-img {
+  float:left;
+}
+
+#clients-carousel 
+.carousel-inner img {
+  border-right:5px solid#eee;
+  padding-right:10px
+}
+
+#clients-carousel 
+.carousel-indicators {
+  top: 100%;
+  left: 50%;
+  margin: 0 0 0 -50px;
+  position: absolute;
+  width: 100px;
+}
+
+#clients-carousel .item {
+  background:#43484E
+}
+
+#clients-carousel 
+.carousel-indicators li{
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+  width: 13px;
+  height: 13px;
+  margin-left: 5px;
+  text-indent: -9999px;
+  display: inline-block;
+}
+
+#clients-carousel 
+.carousel-indicators {
+  margin-top: 20px;
+}
+
+/*====================
+======lg-xl=====
+======================*/
+
+
+
+
+/*====================
+======md=====
+======================*/
+
+
+/*====================
+======sm=====
+======================*/
+@media (max-width:767px){
+
+}
